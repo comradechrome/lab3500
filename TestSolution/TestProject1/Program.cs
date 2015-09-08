@@ -8,16 +8,27 @@ namespace TestProject1
 {
     class Program
     {
+        public delegate void noise();
+
         static void Main(string[] args)
         {
+            noise noiseVar = beep;
             Console.WriteLine("Equalizers flip to side 2");
-            beep();
+            noiseVar();
+
+            noiseVar = beepBeep;
             Console.ReadLine();
-            beep();
+            noiseVar();
         }
 
         static void beep()
         {
+            Console.Beep();
+        }
+
+        static void beepBeep()
+        {
+            Console.Beep();
             Console.Beep();
         }
     }
