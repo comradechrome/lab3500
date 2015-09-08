@@ -11,8 +11,13 @@ namespace TestProject1
         static void Main(string[] args)
         {
             Console.WriteLine("Equalizers flip to side 2");
-            Console.Beep();
+            beep();
             Console.ReadLine();
+            beep();
+        }
+
+        static void beep()
+        {
             Console.Beep();
         }
     }
