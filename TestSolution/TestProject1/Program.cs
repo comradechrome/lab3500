@@ -16,9 +16,17 @@ namespace TestProject1
             Console.WriteLine("Equalizers flip to side 2");
             noiseVar();
 
+            string sample = "2.00";
+            string sample2 = string.Format("{0:0.##}", 2.00);
+
+            Console.WriteLine("Converted String: " + sample2);
+
             noiseVar = beepBeep;
             Console.ReadLine();
             noiseVar();
+
+            
+
         }
 
         static void beep()
